@@ -106,7 +106,8 @@
     color: var(--sage-deep); margin-bottom: 26px;
     padding-bottom: 7px; border-bottom: 1px solid var(--sage);
   }
-  .hero h1 { font-size: clamp(2.5rem, 6.4vw, 4.4rem); font-weight: 700; line-height: 1.25; }
+  .hero h1 { font-size: clamp(2.1rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.32; word-break: keep-all; }
+  .hero h1 .nb { white-space: nowrap; }
   .hero h1 .accent { color: var(--sage-deep); }
   .hero .lead { margin-top: 26px; font-size: 1.12rem; color: var(--ink-soft); max-width: 30em; }
   @media (max-width: 880px) { .hero .lead { margin-inline: auto; } }
@@ -174,12 +175,13 @@
   .feat p { font-size: .94rem; color: var(--ink-soft); line-height: 1.8; }
 
   /* ---------- Showcase ---------- */
-  .shots { display: flex; gap: 26px; overflow-x: auto; padding: 50px 28px 16px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
-  .shots::-webkit-scrollbar { height: 6px; }
-  .shots::-webkit-scrollbar-thumb { background: var(--line); border-radius: 99px; }
-  .shot { flex: 0 0 auto; scroll-snap-align: center; text-align: center; }
+  .shots {
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;
+    gap: 34px 20px; max-width: var(--maxw); margin: 0 auto; padding: 50px 28px 16px;
+  }
+  .shot { flex: 0 0 auto; width: clamp(150px, 16vw, 182px); text-align: center; }
   .shot .frame {
-    width: 218px; border-radius: 34px; padding: 9px; background: linear-gradient(160deg,#3a444e,#262e36);
+    width: 100%; border-radius: 34px; padding: 9px; background: linear-gradient(160deg,#3a444e,#262e36);
     box-shadow: 0 30px 60px -34px rgba(36,42,49,.5);
   }
   .shot .frame img { width: 100%; display: block; border-radius: 26px; }
@@ -247,7 +249,7 @@
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow reveal">Quiet Budgeting</span>
-      <h1 class="reveal">3秒で記録できる、<br><span class="accent">静かな</span>家計簿。</h1>
+      <h1 class="reveal"><span class="nb">3秒で記録できる、</span><br><span class="nb"><span class="accent">静かな</span>家計簿。</span></h1>
       <p class="lead reveal">「今月、あといくら使えるか」。<br>nokori（のこり）は、それだけに集中するために、たくさんの機能を手放しました。広告なし・登録なし・完全オフライン。</p>
       <div class="cta-row reveal">
         <span class="btn btn-primary">App Store <span class="soon">近日公開</span></span>
@@ -316,7 +318,7 @@
 <section class="section-pad" style="padding-top:0;">
   <div class="wrap">
     <p class="kicker reveal">Screens</p>
-    <h2 class="section-title reveal">静かな、4つの画面。</h2>
+    <h2 class="section-title reveal">静かな、主な画面。</h2>
   </div>
   <div class="shots">
     <div class="shot reveal"><div class="frame"><img src="assets/screenshots/01-home.png" alt="ホーム"></div><span>ホーム ｜ 残額と予算バー</span></div>
