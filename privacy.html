@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー — nokori（のこり）</title>
+<meta name="description" content="nokori（のこり）のプライバシーポリシー。当アプリは個人情報・利用状況データを一切収集しません。">
+<meta name="theme-color" content="#efe9dd">
+<link rel="icon" href="assets/app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:#efe9dd; --card:#faf8f2; --ink:#2f3942; --ink-soft:#5a646c;
+    --ink-faint:#8b9299; --sage:#8a9b6e; --sage-deep:#6f7f55; --line:#d8d0bf;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    font-family:"Zen Kaku Gothic New", system-ui, sans-serif;
+    color:var(--ink); background:var(--paper); line-height:1.95;
+    letter-spacing:.02em; -webkit-font-smoothing:antialiased;
+  }
+  body::before {
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.04;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap { max-width:760px; margin:0 auto; padding:0 28px; }
+
+  nav { border-bottom:1px solid var(--line); background:color-mix(in srgb,var(--paper) 85%,transparent); backdrop-filter:blur(10px); position:sticky; top:0; z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; height:64px; max-width:1100px; }
+  .brand { display:flex; align-items:center; gap:11px; font-family:"Zen Old Mincho",serif; font-weight:700; font-size:1.18rem; letter-spacing:.08em; text-decoration:none; color:inherit; }
+  .brand img { width:30px; height:30px; border-radius:8px; }
+  .back { font-size:.9rem; color:var(--ink-soft); text-decoration:none; transition:color .25s; }
+  .back:hover { color:var(--sage-deep); }
+
+  header.page { padding:clamp(56px,9vw,96px) 0 8px; }
+  header.page .kicker { font-size:.78rem; letter-spacing:.3em; text-transform:uppercase; color:var(--sage-deep); margin-bottom:16px; }
+  header.page h1 { font-family:"Zen Old Mincho",serif; font-weight:600; font-size:clamp(2rem,5vw,2.9rem); letter-spacing:.04em; line-height:1.35; }
+  .updated { margin-top:18px; color:var(--ink-faint); font-size:.9rem; letter-spacing:.04em; }
+
+  main { padding:24px 0 90px; }
+  .lang-label {
+    margin:54px 0 8px; font-family:"Zen Old Mincho",serif; font-size:.8rem; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--sage-deep); display:flex; align-items:center; gap:14px;
+  }
+  .lang-label::after { content:""; flex:1; height:1px; background:var(--line); }
+
+  .lead { font-size:1.08rem; color:var(--ink); margin:22px 0; }
+  h2 { font-family:"Zen Old Mincho",serif; font-weight:600; font-size:1.3rem; letter-spacing:.04em; margin:40px 0 12px; }
+  p { color:var(--ink-soft); margin:12px 0; }
+  ul { margin:14px 0 14px 2px; }
+  li { list-style:none; position:relative; padding-left:24px; color:var(--ink-soft); margin:11px 0; }
+  li::before { content:"—"; position:absolute; left:0; color:var(--sage); font-weight:700; }
+  strong { color:var(--ink); font-weight:700; }
+  a.inline { color:var(--sage-deep); text-decoration:underline; text-underline-offset:3px; }
+
+  .highlight {
+    background:var(--card); border:1px solid var(--line); border-left:3px solid var(--sage);
+    border-radius:14px; padding:22px 26px; margin:24px 0; font-family:"Zen Old Mincho",serif;
+    font-size:1.12rem; color:var(--ink); letter-spacing:.03em; line-height:1.7;
+  }
+
+  footer { border-top:1px solid var(--line); padding:40px 0 56px; }
+  footer .wrap { max-width:1100px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; align-items:center; }
+  .copyright { font-size:.82rem; color:var(--ink-faint); letter-spacing:.04em; }
+  footer a { font-size:.9rem; color:var(--ink-soft); text-decoration:none; }
+  footer a:hover { color:var(--sage-deep); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="assets/app-icon.png" alt="nokori">のこり</a>
+    <a href="index.html" class="back">← トップへ</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="wrap">
+    <p class="kicker">Privacy Policy</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日: 2026-05-24</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <!-- 日本語 -->
+    <p class="lang-label">日本語</p>
+    <p class="lead"><strong>nokori（のこり）</strong> は、利用者のプライバシーを最優先に設計された、完全ローカル動作の家計簿アプリです。</p>
+
+    <div class="highlight">当アプリは、いかなる個人情報・利用状況データも収集しません。</div>
+
+    <h2>収集する情報</h2>
+    <ul>
+      <li>入力された支出・カテゴリ・予算・メモなどのデータは、すべて<strong>お使いの端末内にのみ保存</strong>されます。</li>
+      <li>当アプリには<strong>バックエンドサーバーがなく</strong>、データが外部に送信されることはありません。</li>
+      <li><strong>アカウント登録は不要</strong>で、氏名・メールアドレス等の識別情報を取得しません。</li>
+      <li><strong>解析（アナリティクス）SDK・広告・トラッキングを一切使用しません。</strong></li>
+    </ul>
+
+    <h2>データの保存と削除</h2>
+    <ul>
+      <li>データは端末内のアプリ領域に保存され、OS のデータ保護（暗号化）の対象です。</li>
+      <li><strong>アプリを削除すると、保存されたすべてのデータも削除されます。</strong></li>
+    </ul>
+
+    <h2>データの共有</h2>
+    <p>CSV 書き出し機能を使った場合、生成されたファイルは<strong>利用者自身が選んだ共有先</strong>（メール、ファイル保存など）にのみ渡されます。当アプリが自動的に外部へ送信することはありません。</p>
+
+    <h2>第三者への提供</h2>
+    <p>上記のとおり外部送信を行わないため、第三者へのデータ提供はありません。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは、GitHub の <a class="inline" href="https://github.com/mkontani/nokori-site/issues" target="_blank" rel="noopener">Issues ページ</a> よりご連絡ください。</p>
+
+    <!-- English -->
+    <p class="lang-label">English</p>
+    <p class="lead"><strong>nokori</strong> is a fully on-device household budget app designed with privacy first.</p>
+
+    <div class="highlight">The app collects no personal information and no usage data.</div>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>All data you enter (expenses, categories, budget, memos) is stored <strong>only on your device</strong>.</li>
+      <li>The app has <strong>no backend server</strong>; no data is transmitted off the device.</li>
+      <li><strong>No account is required</strong>; we do not obtain any identifying information.</li>
+      <li>The app uses <strong>no analytics SDKs, no ads, and no tracking</strong>.</li>
+    </ul>
+
+    <h2>Data Storage &amp; Deletion</h2>
+    <ul>
+      <li>Data is stored within the app's on-device area and protected by the OS data protection (encryption).</li>
+      <li><strong>Deleting the app deletes all stored data.</strong></li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>If you use the CSV export feature, the generated file is handed only to the destination <strong>you choose</strong> (mail, Files, etc.). The app never sends it anywhere automatically.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this policy, please reach out via our <a class="inline" href="https://github.com/mkontani/nokori-site/issues" target="_blank" rel="noopener">GitHub Issues page</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="copyright">© 2026 nokori. All rights reserved.</span>
+    <a href="index.html">← トップへ戻る</a>
+  </div>
+</footer>
+
+</body>
+</html>
